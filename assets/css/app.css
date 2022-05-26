@@ -1,0 +1,261 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: #f2e6b1; }
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+body {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  grid-gap: 15px 20px;
+  max-width: 1280px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  transition: all 0.1s linear; }
+  @media (max-width: 500px) {
+    .gallery {
+      margin: 80px 10px 40px 10px; } }
+
+.buttonBack {
+  position: fixed;
+  top: 5px;
+  left: 40px;
+  padding: 20px 0;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: black;
+  z-index: 9999; }
+
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+  color: #f2e6b1;
+  margin-left: 10px;
+  font-weight: 300; }
+
+.gallery__item {
+  display: flex;
+  background-color: white;
+  cursor: zoom-in;
+  flex-direction: column; }
+  @media (max-width: 500px) {
+    .gallery__item img {
+      width: 100% !important; } }
+
+.modal .wrapper img {
+  max-width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s linear; }
+
+.modal {
+  padding: 0 10px;
+  margin: 50px 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  transition: all 0.3s linear;
+  opacity: 0; }
+  .modal p {
+    margin-top: 4px;
+    margin-left: 1px;
+    font-size: 16px;
+    color: #9c9c9c; }
+
+.close {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  color: #9c9c9c;
+  background-color: transparent;
+  cursor: pointer; }
+  .close :hover {
+    color: #747474; }
+  .close img {
+    width: 25px;
+    height: 25px; }
+
+.center {
+  align-self: center; }
+
+.hidden {
+  display: none; }
+
+.active {
+  display: flex;
+  flex-direction: column; }
+
+.opacityOn {
+  opacity: 1; }
+
+.opacityOff {
+  opacity: 0; }
+
+.footer {
+  margin-top: 90px; }
+  @media (max-width: 400px) {
+    .footer {
+      margin-top: 20px; } }
+  .footer__list {
+    transition: all 0.3s linear;
+    opacity: 1;
+    display: flex;
+    justify-content: center; }
+  .footer__item {
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px 40px 0;
+    text-align: center;
+    color: #4a556b; }
+    @media (max-width: 400px) {
+      .footer__item {
+        font-size: 11px; } }
+
+.firstMasterpiece {
+  width: 400px;
+  position: relative; }
+  .firstMasterpiece ::before {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 3px;
+    background-color: black;
+    bottom: 20px;
+    right: 0; }
+
+.secondMasterpiece {
+  width: 150px;
+  align-self: center; }
+
+.thirdMasterpiece {
+  width: 250px; }
+
+.fourthMasterpiece {
+  width: 400px; }
+
+.fifthMasterpiece {
+  width: 280px;
+  margin-top: -10px; }
+
+.sixthMasterpiece {
+  width: 380px; }
+
+.seventhMasterpiece {
+  width: 150px; }
+
+.eightMasterpiece {
+  width: 300px; }
+
+.smallDescribe {
+  color: #9c9c9c;
+  margin-top: 5px;
+  font-size: 8px; }
+
+.firstMasterpieceG {
+  width: 250px;
+  position: relative; }
+  .firstMasterpieceG ::before {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 3px;
+    background-color: black;
+    bottom: 20px;
+    right: 0; }
+
+.secondMasterpieceG {
+  width: 330px;
+  align-self: center; }
+
+.thirdMasterpieceG {
+  width: 250px; }
+
+.fourthMasterpieceG {
+  width: 480px; }
+
+.fifthMasterpieceG {
+  width: 280px;
+  margin-top: -10px; }
+
+.sixthMasterpieceG {
+  width: 300px; }
+
+.seventhMasterpieceG {
+  width: 270px; }
+
+.eightMasterpieceG {
+  width: 180px; }
+
+.ninthMasterpieceG {
+  width: 450px; }
+
+.bio {
+  width: 80%;
+  margin: 30px auto; }
+  .bio h1 {
+    text-align: center; }
+
+.bio_paragraph {
+  text-align: center;
+  line-height: 2.5rem;
+  padding: 3em 5em 1em 5em;
+  font-size: 16px; }
+
+.bio_subparagraphs {
+  margin-top: 30px; }
+
+.bio_subparagraph {
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 15px; }
+
+.contact {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 25px; }
+
+.firstMasterpieceP {
+  width: 450px; }
+
+.firstMasterpieceI {
+  width: 250px; }
+
+.secondMasterpieceI {
+  width: 250px; }
+
+.thirdMasterpieceI {
+  width: 250px; }
+
+.fourthMasterpieceI {
+  width: 250px; }
+
+/*# sourceMappingURL=app.css.map */
