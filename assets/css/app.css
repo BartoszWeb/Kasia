@@ -149,11 +149,12 @@ body {
     right: 0; }
 
 .secondMasterpiece {
-  width: 150px;
+  width: 400px;
   align-self: center; }
 
 .thirdMasterpiece {
-  width: 250px; }
+  width: 400px;
+  align-self: center; }
 
 .fourthMasterpiece {
   width: 400px; }

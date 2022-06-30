@@ -12,6 +12,7 @@ const handleZoom = (e) => {
     const describeImg = document.createElement("p");
     describeImg.innerHTML = `${ e.target.dataset.details }`;
     modalImg.src = e.target.dataset.src;
+    console.log(e.target.dataset.src);
     modal.appendChild(modalWrapper);
     modalWrapper.appendChild(modalImg);
     modalWrapper.appendChild(describeImg);
